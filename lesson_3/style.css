@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.table-container {
+  padding: 16px 24px 16px 24px;
+  margin: 20px auto;
+  max-width: 100%;
+  background-color: #fff;
+  width: 90%;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+thead th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  width: 24px;
+  height: 22px;
+}
+
+.name {
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4;
+  padding: 0px 0px 0px 16px;
+}
+
+.email {
+  color: rgb(117, 117, 117);
+  font-family: Roboto;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.email:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.department {
+  color: rgb(117, 117, 117);
+  font-family: Roboto;
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.department:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.active {
+  color: rgb(13, 104, 50);
+  background: rgb(214, 240, 224);
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.onboarding {
+  color: rgb(44, 88, 160);
+  background: rgb(223, 231, 246);
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.awaiting {
+  color: rgb(115, 81, 13);
+  background: rgb(251, 240, 218);
+  font-weight: bold;
+  padding: 5px 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.edit-title {
+  color: rgb(59, 113, 202);
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.edit-title:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-container img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+.info {
+  flex-direction: column;
+}
+
+.block-names {
+  padding: 16px;
+}
