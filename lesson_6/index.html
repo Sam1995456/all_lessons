@@ -5,26 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BankDash.</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="the-most-main-container">
-      <header>
-        <h1 class="header-title">Credit Cards</h1>
-        <div class="panel-user">
-          <form class="header-input-form" action="#">
-            <input type="text" placeholder="Search for something" />
-          </form>
-          <a href="#"><img src="" alt="settings" /></a>
-          <a href="#"><img src="" alt="notices" /></a>
-          <a href="#"><img src="" alt="user-profile" /></a>
+      <div class="aside__container">
+        <div class="bankdash__container">
+          <img
+            class="bankdash__logo"
+            src="./images/bankdash-logo.svg"
+            alt="bankdash-logo"
+          />
+          <a class="bankdash-logo__title" href="#">BankDash.</a>
         </div>
-      </header>
-      <!-- end of header -->
-      <main>
-        <section class="cards-section">
-          <h2 class="">My Cards</h2>
-        </section>
-      </main>
+        <nav class="bankdash__nav">
+          <ul class="bankdash__list">
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/dashboard.svg"
+                alt="Dashboard"
+              />
+              <a class="bankdash__link" href="#">Dashboard</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/transactions.svg"
+                alt="Transactions"
+              />
+              <a class="bankdash__link" href="#">Transactions</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/accounts.svg"
+                alt="Accounts"
+              />
+              <a class="bankdash__link" href="#">Accounts</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/investments.svg"
+                alt="Investments"
+              />
+              <a class="bankdash__link" href="#">Investments</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/credit_cards.svg"
+                alt="Credit Cards"
+              />
+              <a class="bankdash__link" href="#">Credit Cards</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/loan.svg"
+                alt="loans"
+              />
+              <a class="bankdash__link" href="#">Loans</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/service.svg"
+                alt="services"
+              />
+              <a class="bankdash__link" href="#">Services</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/econometrics.svg"
+                alt="My Privileges"
+              />
+              <a class="bankdash__link" href="#">My Privileges</a>
+            </li>
+            <li class="bankdash__item">
+              <img
+                class="bankdash__image"
+                src="./images/settings.svg"
+                alt="Setting"
+              />
+              <a class="bankdash__link" href="#">Setting</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- end of aside-container -->
+      <div class="main__container">
+        <header class="header">
+          <h1 class="header__title">Credit Cards</h1>
+          <div class="header__panel-user">
+            <form class="header__form" action="#">
+              <input
+                class="header__input"
+                type="text"
+                placeholder="Search for something"
+              />
+              <img
+                class="header__search-icon"
+                src="./images/search-icon.svg"
+                alt="Search"
+              />
+            </form>
+            <a href="#"
+              ><img src="./images/settings_group.svg" alt="settings"
+            /></a>
+            <a href="#"
+              ><img src="./images/notification_group.svg" alt="notices"
+            /></a>
+            <a href="#"
+              ><img src="./images/avatar_group.svg" alt="user-profile"
+            /></a>
+          </div>
+        </header>
+        <!-- end of header -->
+        <main>
+          <section class="cards-section">
+            <h2 class="">My Cards</h2>
+          </section>
+        </main>
+        <!-- end of main -->
+      </div>
     </div>
   </body>
 </html>
