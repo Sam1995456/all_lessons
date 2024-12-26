@@ -7,12 +7,13 @@
 .the-most-main-container {
   width: 1440px;
   margin: 0 auto;
-  /* height: 400vh; */
   display: flex;
 }
 
 .aside__container {
   background-color: white;
+  border-right: 2px solid rgb(245, 247, 250);
+  /* width: 300px; */
 }
 
 .bankdash__container {
@@ -21,6 +22,7 @@
   align-items: center;
   gap: 5px;
   padding-top: 40px;
+  padding-right: 20px; /* added to push back the border   */
   margin-bottom: 60px;
 }
 
@@ -43,6 +45,7 @@
 
 .bankdash__item {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 
@@ -67,7 +70,7 @@
 
 /* start of header */
 
-.main__container {
+.header-main__container {
   width: 1440px;
 }
 
@@ -76,6 +79,9 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
+  margin-bottom: 30px;
+  /* border-bottom: 2px solid rgb(245, 247, 250); */
+  padding-left: 60px;
 }
 
 .header__title {
@@ -86,7 +92,6 @@
   line-height: 34px;
   letter-spacing: 0%;
   text-align: left;
-  padding-left: 60px;
 }
 
 .header__panel-user {
@@ -120,3 +125,192 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* end of header */
+
+/* start of main */
+
+.main {
+  background: rgb(245, 247, 250);
+  height: 200vh;
+  padding-left: 60px;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.cards__title {
+  color: rgb(51, 59, 105);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.cards__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-card {
+  width: 350px;
+  /* height: 225px; */
+  border-radius: 25px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(45, 96, 255) 2.413%,
+    rgb(83, 155, 255) 101.106%
+  );
+  /* padding: 25px 25px 0px 25px; */
+}
+
+.blue-card {
+  border-radius: 25px;
+  background: linear-gradient(
+    135.29deg,
+    rgb(76, 73, 237) 2.413%,
+    rgb(10, 6, 244) 101.106%
+  );
+}
+
+.white-card {
+  box-sizing: border-box;
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 25px;
+  background: rgb(30, 30, 30);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-balance {
+  padding-top: 25px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card-chip {
+  padding-right: 30px;
+}
+
+.balance-title {
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.balance-amount {
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-holder {
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+.card-holder-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-holder-name {
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-valid-thru {
+  padding-right: 100px;
+  margin-bottom: 50px;
+}
+
+.valid-thru-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.valid-thru-date {
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  gap: 70px;
+}
+
+.card-number {
+  color: rgb(255, 255, 255);
+  font-family: "Lato";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.card-logos {
+  padding-right: 30px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.card-logo__right {
+  position: absolute;
+  right: 15px;
+  bottom: 4px;
+}
+
+/* end of first section */
+/* begin of second section */

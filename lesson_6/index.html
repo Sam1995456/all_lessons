@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="the-most-main-container">
@@ -107,7 +113,7 @@
         </nav>
       </div>
       <!-- end of aside-container -->
-      <div class="main__container">
+      <div class="header-main__container">
         <header class="header">
           <h1 class="header__title">Credit Cards</h1>
           <div class="header__panel-user">
@@ -135,9 +141,153 @@
           </div>
         </header>
         <!-- end of header -->
-        <main>
+        <main class="main">
           <section class="cards-section">
-            <h2 class="">My Cards</h2>
+            <h2 class="cards__title">My Cards</h2>
+            <div class="cards__container">
+              <div class="light-card">
+                <div class="card-header">
+                  <div class="card-balance">
+                    <p class="balance-title">Balance</p>
+                    <p class="balance-amount">$5,756</p>
+                  </div>
+                  <img
+                    class="card-chip"
+                    src="./images/Chip_Card.svg"
+                    alt="Chip Icon"
+                  />
+                </div>
+                <div class="card-details">
+                  <div class="card-holder">
+                    <p class="card-holder-title">CARD HOLDER</p>
+                    <p class="card-holder-name">Eddy Cusuma</p>
+                  </div>
+                  <div class="card-valid-thru">
+                    <p class="valid-thru-title">VALID THRU</p>
+                    <p class="valid-thru-date">12/22</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <p class="card-number">3778 **** **** 1234</p>
+                  <div class="card-logos">
+                    <img
+                      class="card-logo__left"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                    <img
+                      class="card-logo__right"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="blue-card">
+                <div class="card-header">
+                  <div class="card-balance">
+                    <p class="balance-title">Balance</p>
+                    <p class="balance-amount">$5,756</p>
+                  </div>
+                  <img
+                    class="card-chip"
+                    src="./images/Chip_Card.svg"
+                    alt="Chip Icon"
+                  />
+                </div>
+                <div class="card-details">
+                  <div class="card-holder">
+                    <p class="card-holder-title">CARD HOLDER</p>
+                    <p class="card-holder-name">Eddy Cusuma</p>
+                  </div>
+                  <div class="card-valid-thru">
+                    <p class="valid-thru-title">VALID THRU</p>
+                    <p class="valid-thru-date">12/22</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <p class="card-number">3778 **** **** 1234</p>
+                  <div class="card-logos">
+                    <img
+                      class="card-logo__left"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                    <img
+                      class="card-logo__right"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="white-card">
+                <div class="card-header">
+                  <div class="card-balance">
+                    <p class="balance-title">Balance</p>
+                    <p class="balance-amount">$5,756</p>
+                  </div>
+                  <img
+                    class="card-chip"
+                    src="./images/Chip_Card.svg"
+                    alt="Chip Icon"
+                  />
+                </div>
+                <div class="card-details">
+                  <div class="card-holder">
+                    <p class="card-holder-title">CARD HOLDER</p>
+                    <p class="card-holder-name">Eddy Cusuma</p>
+                  </div>
+                  <div class="card-valid-thru">
+                    <p class="valid-thru-title">VALID THRU</p>
+                    <p class="valid-thru-date">12/22</p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <p class="card-number">3778 **** **** 1234</p>
+                  <div class="card-logos">
+                    <img
+                      class="card-logo__left"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                    <img
+                      class="card-logo__right"
+                      src="./images/Ellipse.svg"
+                      alt="Card Logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end of first section -->
+          <!-- begin of second section -->
+          <section class="card-management__section">
+            <div class="card-statistic__container">
+              <h2 class="card-statistic__title">Card Expense Statistics</h2>
+              <div class="card-statistic__chart">
+                <img src="./images/chart.svg" alt="chart" />
+                <ul class="card-statistic__legend">
+                  <li class="card-statistic__legend-item">
+                    <img src="" alt="blue color" />
+                    <p>DBL Bank</p>
+                  </li>
+                  <li class="card-statistic__legend-item">
+                    <img src="" alt="salat color" />
+                    <p>BRC Bank</p>
+                  </li>
+                  <li class="card-statistic__legend-item">
+                    <img src="" alt="pink color" />
+                    <p>ABM Bank</p>
+                  </li>
+                  <li class="card-statistic__legend-item">
+                    <img src="" alt="orange color" />
+                    <p>MCP Bank</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </section>
         </main>
         <!-- end of main -->
