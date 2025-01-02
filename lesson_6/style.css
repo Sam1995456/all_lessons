@@ -132,7 +132,7 @@
 
 .main {
   background: rgb(245, 247, 250);
-  height: 200vh;
+  /* height: 200vh; */
   padding-left: 60px;
 }
 
@@ -140,7 +140,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding-top: 20px;
+  margin-bottom: 25px;
 }
 
 .cards__title {
@@ -170,7 +170,7 @@
     rgb(45, 96, 255) 2.413%,
     rgb(83, 155, 255) 101.106%
   );
-  /* padding: 25px 25px 0px 25px; */
+  padding: 25px;
 }
 
 .blue-card {
@@ -180,6 +180,7 @@
     rgb(76, 73, 237) 2.413%,
     rgb(10, 6, 244) 101.106%
   );
+  padding: 25px;
 }
 
 .white-card {
@@ -187,6 +188,7 @@
   border: 1px solid rgb(223, 234, 242);
   border-radius: 25px;
   background: rgb(30, 30, 30);
+  padding: 25px;
 }
 
 .card-header {
@@ -196,13 +198,11 @@
 }
 
 .card-balance {
-  padding-top: 25px;
-  padding-left: 30px;
   margin-bottom: 30px;
 }
 
 .card-chip {
-  padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .balance-title {
@@ -228,11 +228,10 @@
 .card-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .card-holder {
-  padding-left: 30px;
+  margin-bottom: 50px;
   margin-bottom: 50px;
 }
 
@@ -257,8 +256,8 @@
 }
 
 .card-valid-thru {
-  padding-right: 100px;
-  margin-bottom: 50px;
+  padding-right: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .valid-thru-title {
@@ -285,7 +284,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 30px;
   gap: 70px;
 }
 
@@ -297,12 +295,10 @@
   line-height: 26px;
   letter-spacing: 0%;
   text-align: left;
-  margin-bottom: 25px;
+  width: 194px;
 }
 
 .card-logos {
-  padding-right: 30px;
-  margin-bottom: 25px;
   position: relative;
 }
 
@@ -314,3 +310,327 @@
 
 /* end of first section */
 /* begin of second section */
+
+.card-management__section {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+.card-statistic__container {
+}
+
+.card-statistic__chart {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 50px;
+  gap: 16px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+}
+
+.card-statistic__title {
+  color: rgb(51, 59, 105);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card-statistic__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+
+  list-style: none;
+}
+
+.card-statistic__legend-item {
+  display: flex;
+  align-items: center;
+  width: 101px;
+  gap: 12px;
+}
+
+.card-statistic__text {
+  color: rgb(113, 142, 191);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* end of card statistic container */
+/* start of card list container */
+
+.card-list__title {
+  color: rgb(51, 59, 105);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card-list__items {
+  list-style: none;
+}
+
+.card-item__type-top {
+  color: rgb(35, 35, 35);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.card-item__type-bottom {
+  color: rgb(113, 142, 191);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-list__items-info {
+  /* width: 730px; */
+  height: 90px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  padding: 25px 30px 25px 15px;
+}
+
+.card-item__link {
+  color: rgb(24, 20, 243);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.card-item__type {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-blue {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(231, 237, 255);
+}
+
+.card-pink {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(255, 224, 235);
+}
+
+.card-yellow {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(255, 245, 217);
+}
+
+/* end of second section */
+/* start of third section */
+
+.add-card__section {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.add-card__title {
+  color: rgb(51, 59, 105);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.add-card__form {
+  width: 730px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+}
+
+.add-card__description {
+  width: 633px;
+
+  color: rgb(113, 142, 191);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.add-card__inputs {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.add-card__field {
+  color: rgb(35, 35, 35);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.add-card__input-item {
+  width: 320px;
+}
+
+.add-card__input {
+  color: rgb(113, 142, 191);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 16px 100px 16px 32px;
+  border: 1px solid rgb(223, 234, 242);
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+}
+
+.add-card__button {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 9px;
+  background: rgb(24, 20, 243);
+  padding: 15px 40px;
+  border: none;
+}
+
+.add-card__button:hover {
+  cursor: pointer;
+  background: rgb(24, 20, 243, 0.8);
+}
+
+/* end of add-card__container */
+/* start of card__settings */
+
+.card-setting__title {
+  color: rgb(51, 59, 105);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.card-setting__options {
+  /* width: 350px; */
+  height: 463px;
+
+  border-radius: 25px;
+  background: rgb(255, 255, 255);
+  list-style: none;
+  padding: 30px 50px 40px 30px;
+}
+
+.card-setting__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 255px;
+}
+
+.card-setting__item:last-child {
+  margin-bottom: 0;
+}
+
+.card-setting__item-title {
+  color: rgb(35, 35, 35);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.card-settting__item-description {
+  color: rgb(113, 142, 191);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-setting__image-yellow {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(255, 245, 217);
+}
+
+.card-setting__image-blue {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(231, 237, 255);
+}
+
+.card-setting__image-pink {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(255, 224, 235);
+}
+
+.card-setting__image-green {
+  padding: 20px 18px;
+  border-radius: 20px;
+  background: rgb(231, 255, 224);
+}
