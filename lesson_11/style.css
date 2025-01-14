@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(245, 247, 250);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav__link {
+  color: rgb(24, 25, 31);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav__link:hover {
+  color: rgb(82, 146, 98);
+}
+
+.header__auth {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.header__login {
+  color: rgb(76, 175, 79);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.header__login:hover {
+  color: brown;
+}
+
+.header__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 10px 20px;
+  background: rgb(76, 175, 79);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.header__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.header__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.header__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.header__btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* end of header */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background: rgb(245, 247, 250);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero__title {
+  width: 657px;
+
+  font-family: "Inter";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.hero__highlight {
+  color: rgb(76, 175, 79);
+}
+
+.hero__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.hero__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 14px 32px;
+  background: rgb(76, 175, 79);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.hero__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.hero__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.hero__btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* end of hero */
+
+.partners {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.partners__title {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.partners__description {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
+/* end of partners */
+
+.community {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.community__title {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 8px;
+  width: 542px;
+}
+
+.community__description {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.community-cards {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.community__item {
+  width: 299px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+  background: rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.community__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px 0px rgba(171, 190, 209, 0.4);
+}
+
+.community-cards__title {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.community-cards__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 251px;
+}
+
+.community-cards__icon {
+  margin-bottom: 16px;
+}
+
+/* end of community */
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.experience__title {
+  color: rgb(77, 77, 77);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+  width: 601px;
+}
+
+.experience__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+  width: 601px;
+}
+
+.experience__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: rgb(76, 175, 79);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.experience__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.experience__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.experience__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.experience__btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* end of experience */
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 230px;
+  padding: 65px 145px 65px 145px;
+  background: rgb(245, 247, 250);
+}
+
+.statistics__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.statistics__title {
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+  /* width: 380px; */
+}
+
+.statistics__highlight {
+  color: rgb(76, 175, 79);
+}
+
+.statistics__description {
+  color: rgb(24, 25, 31);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 190px;
+}
+
+.statistics__number {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.statistics__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.statistics__list {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  grid-column-gap: 120px;
+
+  align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  /* align-items: center; */
+}
