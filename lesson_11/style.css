@@ -9,13 +9,11 @@
 .container {
   width: 1440px;
   margin: 0 auto;
+  /* height: 500vh; */
 }
 
 .header {
-  padding-top: 30px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 120px;
+  padding: 22px 120px;
 
   display: flex;
   justify-content: space-between;
@@ -389,15 +387,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 230px;
+  gap: 225px;
   padding: 65px 145px 65px 145px;
   background: rgb(245, 247, 250);
+  margin-bottom: 48px;
 }
 
 .statistics__info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 8px;
 }
 
@@ -459,9 +457,427 @@
   grid-column-gap: 120px;
 
   align-items: center; */
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  /* align-items: center; */
+}
+
+/* end of statistic */
+
+.design {
+  display: flex;
+  gap: 50px;
+  padding-left: 144px;
+  padding-right: 144px;
+  margin-bottom: 48px;
+}
+
+.design__content {
+}
+
+.design__title {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-right: 60px;
+  padding-top: 60px;
+  margin-bottom: 16px;
+}
+
+.design__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-right: 60px;
+  margin-bottom: 16px;
+}
+
+.design__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: rgb(76, 175, 79);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.design__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.design__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.design__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.design__btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+/* end of design  */
+
+.testimonial {
+  padding: 32px 144px 32px 144px;
+  display: flex;
+
+  gap: 80px;
+
+  background: rgb(245, 247, 250);
+  margin-bottom: 48px;
+}
+
+.testimonial__image {
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(241, 244, 248, 0.4);
+  background: url();
+}
+
+.testimonial__text {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.testimonial__name {
+  color: rgb(76, 175, 79);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.testimonial__company {
+  color: rgb(137, 147, 158);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.testimonial__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial__link {
+  color: rgb(76, 175, 79);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* end of testemonial */
+
+.marketing {
+  padding-left: 144px;
+  padding-right: 144px;
+  margin-bottom: 200px;
+}
+
+.marketing__title {
+  color: rgb(77, 77, 77);
+  font-family: "Inter";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.marketing__description {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.marketing__list {
+  display: flex;
+  gap: 24px;
+}
+
+.marketing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 368px;
+  position: relative;
+}
+
+.marketing__content {
+  width: 85%;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+  background: rgb(245, 247, 250);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marketing__content:hover {
+  transform: translate(-50%, 0) scale(1.05);
+  box-shadow: 0px 12px 24px 0px rgba(171, 190, 209, 0.6);
+}
+
+.marketing__subtitle {
+  color: rgb(113, 113, 113);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.marketing__link {
+  color: rgb(76, 175, 79);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.marketing__link:active {
+  color: rgb(248, 183, 44);
+}
+
+/* end of marketing */
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  background: rgb(245, 247, 250);
+}
+
+.demo__title {
+  color: rgb(38, 50, 56);
+  font-family: "Inter";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.demo__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  padding: 14px 32px;
+  border-radius: 4px;
+  background: rgb(76, 175, 79);
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.demo__btn:hover {
+  background: rgb(139, 179, 141);
+}
+
+.demo__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+.demo__btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* end of demo and main */
+
+.footer {
+  padding: 64px 165px 64px 165px;
+  background: rgb(38, 50, 56);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer__info {
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer__copyright {
+  color: rgb(245, 247, 250);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.footer__rights {
+  color: rgb(245, 247, 250);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__nav-title {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.footer__nav-link {
+  color: rgb(245, 247, 250);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer__nav-link:hover {
+  color: rgb(11, 224, 136);
+}
+
+.footer__nav-item {
+  margin-bottom: 12px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 120px;
+}
+
+.footer__input {
+  border: 0;
+  background-color: transparent;
+  color: rgb(217, 219, 225);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__input::placeholder {
+  color: rgb(217, 219, 225);
+}
+
+.footer__wrapper {
+  padding: 10px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.footer__subscribe-title {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
 }
