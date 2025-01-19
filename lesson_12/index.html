@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson_12_input</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&family=Flow+Circular&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Setting</h1>
+        <nav class="header__nav">
+          <form class="header__form" action="">
+            <input
+              class="header__input"
+              type="text"
+              placeholder="Search for something"
+            />
+            <img
+              class="header__input-icon"
+              src="./images/loupe.svg"
+              alt="loupe-logo"
+            />
+          </form>
+          <a class="header__link" href="#">
+            <img src="./images/setting-icon.svg" alt="settings-logo" />
+          </a>
+          <a class="header__link" href="#">
+            <img
+              src="./images/notification-icon.svg"
+              alt="notifications-logo"
+            />
+          </a>
+          <a class="header__link" href="#">
+            <img src="./images/avatar.png" alt="avatar" />
+          </a>
+        </nav>
+      </header>
+      <main>
+        <section class="auth">
+          <div class="auth__profile">
+            <a class="auth__link" href="#">Edit Profile</a>
+            <a class="auth__link" href="#">Preferences</a>
+            <a class="auth__link" href="#">Security</a>
+          </div>
+          <div class="auth__profile-border"></div>
+          <div class="auth__content">
+            <img
+              class="auth__avatar"
+              src="./images/avatar-big.svg"
+              alt="avatar"
+            />
+            <form class="auth__form" action="#">
+              <ul class="auth__list">
+                <li class="auth__item">
+                  <label class="auth__label" for="name">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    minlength="2"
+                    maxlength="50"
+                    title="Name must be between 2 and 50 characters"
+                    class="auth__input"
+                    placeholder="Charlene Reed"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    maxlength="100"
+                    title="Email must be valid and not exceed 100 characters"
+                    class="auth__input"
+                    placeholder="charlenereed@gmail.com"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="dob">Date of Birth</label>
+                  <input
+                    type="text"
+                    name="dob"
+                    class="auth__input"
+                    id="dob"
+                    placeholder="25 January 1990"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="permanent-adress"
+                    >Permanent Address</label
+                  >
+                  <input
+                    type="text"
+                    name="permanent_adress"
+                    maxlength="200"
+                    title="Address must not exceed 200 characters"
+                    id="permanent-adress"
+                    class="auth__input"
+                    placeholder="San Jose, California, USA"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="postal-code"
+                    >Postal Code</label
+                  >
+                  <input
+                    type="number"
+                    name="postal_code"
+                    minlength="5"
+                    maxlength="10"
+                    pattern="[0-9]{5,10}"
+                    title="Postal code must be between 5 and 10 digits"
+                    id="postal-code"
+                    class="auth__input"
+                    placeholder="45962"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="username">User Name</label>
+                  <input
+                    type="text"
+                    name="username"
+                    minlength="3"
+                    maxlength="30"
+                    pattern="[a-zA-Z0-9_-]+"
+                    title="Username can only contain letters, numbers, underscores and hyphens, and must be between 3 and 30 characters"
+                    id="username"
+                    class="auth__input"
+                    placeholder="Charlene Reed"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="auth__input"
+                    placeholder="********"
+                    minlength="2"
+                    maxlength="50"
+                    title="Name must be between 2 and 50 characters"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                    title="Must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character (@$!%*?&)"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="present-adress"
+                    >Present Address</label
+                  >
+                  <input
+                    type="text"
+                    name="present_address"
+                    maxlength="200"
+                    title="Address must not exceed 200 characters"
+                    id="present-adress"
+                    class="auth__input"
+                    placeholder="San Jose, California, USA"
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="city">City</label>
+                  <input
+                    type="text"
+                    name="city"
+                    minlength="2"
+                    maxlength="50"
+                    title="City must be between 2 and 50 characters"
+                    id="city"
+                    class="auth__input"
+                    placeholder="San Jose"
+                    required
+                  />
+                </li>
+
+                <li class="auth__item">
+                  <label class="auth__label" for="country">Country</label>
+                  <input
+                    type="text"
+                    name="country"
+                    minlength="2"
+                    maxlength="50"
+                    title="Country must be between 2 and 50 characters"
+                    id="country"
+                    class="auth__input"
+                    placeholder="USA"
+                    required
+                  />
+                </li>
+              </ul>
+            </form>
+          </div>
+          <button class="auth__submit">Save</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
