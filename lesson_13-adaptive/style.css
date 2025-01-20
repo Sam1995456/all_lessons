@@ -8,6 +8,10 @@
 
 /* mobile first */
 
+body {
+  background: #fffaeb;
+}
+
 .main {
   width: 375px;
   padding-top: 40px;
@@ -20,8 +24,10 @@
   background: rgb(249, 184, 0);
 
   padding: 30px 20px 25px 20px;
+  margin: 0 auto;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: column;
@@ -48,7 +54,6 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 34px;
-  letter-spacing: 0%;
   text-align: center;
   text-decoration-line: underline;
   margin-bottom: 12px;
@@ -83,41 +88,186 @@
   gap: 50px;
 }
 
-@media (max-width: 1440px) {
+/* end of cta-banner */
+
+.testemonials {
+  max-width: 100%;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+
+  padding: 40px;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.testemonials__img {
+  margin-bottom: 40px;
+}
+
+.testemonials-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testemonials__title {
+  color: rgb(38, 38, 38);
+  font-family: "Segoe UI";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.testemonials__description {
+  color: rgb(38, 38, 38);
+  font-family: "Segoe UI";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+.testemonials__name {
+  color: rgb(38, 38, 38);
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testemonials__arrows-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* end of testemonials */
+
+.benefits {
+  max-width: 100%;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+
+  padding: 40px;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__img {
+  margin-bottom: 10px;
+}
+
+.benefits-content {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.benefits__title {
+  color: rgb(38, 38, 38);
+  font-family: "Segoe UI";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 30px;
+  text-align: ;
+}
+
+.benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+.benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 35px 12px 16px;
+
+  margin-bottom: 14px;
+
+  border-radius: 50px;
+  background: rgb(255, 250, 235);
+}
+
+.benefits__text {
+  color: rgb(38, 38, 38);
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+}
+
+.benefits__btn {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+
+  padding: 16px 60px 16px 40px;
+  border-radius: 46px;
+  background: rgb(38, 38, 38);
+}
+
+/* desktop */
+
+@media (min-width: 1920px) {
   .main {
     width: 100%;
   }
 
   .cta-banner {
-    max-width: 1700px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 1700px;
     border-radius: 100px;
     background: rgb(249, 184, 0);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    padding: 90px 120px 80px 120px;
+    padding: 50px 101px 50px 181px;
     gap: 120px;
   }
 
   .cta__img {
-    flex: 1;
+    width: 714px;
   }
 
   .cta-content {
-    display: flex;
-    flex-direction: column;
     flex: 1;
   }
 
   .cta__title {
     color: rgb(38, 38, 38);
     font-family: "Segoe UI";
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 67px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 
   .cta__subtitle {
@@ -126,10 +276,8 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 34px;
-    letter-spacing: 0%;
     text-align: left;
     text-decoration-line: underline;
-    margin-bottom: 12px;
   }
 
   .cta__description {
@@ -140,7 +288,7 @@
     line-height: 27px;
     letter-spacing: 2%;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
   }
 
   .cta__btn {
@@ -152,7 +300,7 @@
     text-align: left;
     width: fit-content;
 
-    padding: 16px 40px;
+    padding: 22px 50px;
     border-radius: 38.15px;
     border: none;
     background: rgb(38, 38, 38);
@@ -160,5 +308,68 @@
     display: flex;
     align-items: center;
     gap: 50px;
+  }
+
+  /* end of cta */
+
+  .testemonials {
+    margin: 0 auto;
+    margin-bottom: 150px;
+    width: 1700px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 150px;
+    gap: 70px;
+  }
+
+  .testemonials__img {
+    width: 472px;
+    margin-bottom: 40px;
+  }
+
+  /* .testemonials-content {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .testemonials__title {
+    color: rgb(38, 38, 38);
+    font-family: "Segoe UI";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 67px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .testemonials__description {
+    color: rgb(38, 38, 38);
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .testemonials__name {
+    color: rgb(38, 38, 38);
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .testemonials__arrows-pic {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
   }
 }
